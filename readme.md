@@ -6,19 +6,29 @@ This is used to store maps.
 Thanks for storing my stuff github! Can you believe _they do it for free_?
 
 # How to add to this
-First: Make sure the file is big and detailed!
+### First: Make sure the file is big and detailed!
 - Get QGIS
 - Get the plugin for QGIS: `Freehand raster georeferencer`
 - Add the WFRP world as an external source either via gitzmans (http://www.gitzmansgallery.com/tiles/{z}_{x}_{y}.jpg) or this repo (https://claydegruchy.github.io/wfrp-map-storage/world-map/{Z}/{Z}_{X}_{Y}.jpg)
-Now we need to convert the image that we have to a georeferenced TIFF
+
+
+### Now we need to convert the image that we have to a georeferenced TIFF
 - Use `Freehand raster` to import the file you want (`AD`)
 - Postion it using the pokey ass interface it gives you (I suggest using `2P`)
 - One in place, export and choose a dir
-Now we convert our georeferenced TIFF to XYZ chunks for easy usage in the main map
+
+
+### Now we convert our georeferenced TIFF to XYZ chunks for easy usage in the main map
 - Import the image into QGIS (I drag and drop into the panel), it should automatically sit in the right spot
 - Unselect the other layers and enable the toolbox (processing>toolbox)
-- Choose `generate XYZ directory`
-- Set the settings, I use `MinZoom=8, maxZoom=14` but it depends on the detail of the source image
+- Choose `gdal2tiles` 
+- Set the settings, I use 
+	- cutting profile = raster
+	- zoom levels = 1-7 (1-8 for really big files)
+	- web viewer = openlayers
+	- title = title
+	- output dir = somewhere obvious
+	- It should look like this: `gdal2tiles.bat -p raster -z 1-7 -w openlayers -t Nuln -r average -a 0.0 source.png dest/`
 - Set an output directory for the files AND the html
 And its done
 
