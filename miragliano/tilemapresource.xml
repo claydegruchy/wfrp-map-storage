@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
+      <Title>Miragliano</Title>
+      <Abstract></Abstract>
+      <SRS>PROJCS["WGS 84 / Pseudo-Mercator",GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],PROJECTION["Mercator_1SP"],PARAMETER["central_meridian",0],PARAMETER["scale_factor",1],PARAMETER["false_easting",0],PARAMETER["false_northing",0],UNIT["metre",1,AUTHORITY["EPSG","9001"]],AXIS["Easting",EAST],AXIS["Northing",NORTH],EXTENSION["PROJ4","+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs"],AUTHORITY["EPSG","3857"]]</SRS>
+      <BoundingBox minx="-4605922.50961291138083" miny="-188443.51621110213455" maxx="-4405031.33771685324609" maxy="-34504.21692613539926"/>
+      <Origin x="-4605922.50961291138083" y="-188443.51621110213455"/>
+      <TileFormat width="256" height="256" mime-type="image/png" extension="png"/>
+      <TileSets profile="raster">
+        <TileSet href="1" units-per-pixel="412.08445517140160" order="1"/>
+        <TileSet href="2" units-per-pixel="206.04222758570080" order="2"/>
+        <TileSet href="3" units-per-pixel="103.02111379285040" order="3"/>
+        <TileSet href="4" units-per-pixel="51.51055689642520" order="4"/>
+        <TileSet href="5" units-per-pixel="25.75527844821260" order="5"/>
+        <TileSet href="6" units-per-pixel="12.87763922410630" order="6"/>
+        <TileSet href="7" units-per-pixel="6.43881961205315" order="7"/>
+      </TileSets>
+    </TileMap>
+    
